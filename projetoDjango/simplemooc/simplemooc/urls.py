@@ -5,6 +5,6 @@ admin.autodiscover()
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home),
-    path('contato/', views.contact),
+    path('', views.home, name='index'),
+    path('contato/', views.contact, name='contact'),
 ]
