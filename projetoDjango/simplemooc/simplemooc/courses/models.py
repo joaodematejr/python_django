@@ -29,3 +29,6 @@ class Course(models.Model):
     )
 
     object = CourseManager()
+
+    def __str__(self):
+        return self.name
